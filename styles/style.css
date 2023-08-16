@@ -2,10 +2,20 @@ body{
     background-image: url("images/Cristiano_Ronaldo.jpg");
     background-repeat: no-repeat, repeat;
     font-family:'Montserrat', sans-serif;
+    font-weight:300;
     color: antiquewhite;
     text-align: center;
+    
 }
-
+#text{
+    right: 300px;
+    color: antiquewhite;
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 9;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -13,7 +23,7 @@ ul{
     overflow: hidden;
     background-color: rgba(51, 51, 51, 0);
 }
-  
+
 li {
     float: left;
 }
@@ -44,6 +54,7 @@ div {
 }
 
 section img {
+    font-weight: 300;
     margin-bottom: 0.5rem;
     position: absolute;
     top: 0;
