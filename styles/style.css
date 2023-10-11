@@ -25,6 +25,11 @@ h1{
     padding-top: 50px;
 
 }
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 
 
 
@@ -41,7 +46,7 @@ li {
 }
 li a{
     display: block;
-    color: antiquewhite;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -49,17 +54,26 @@ li a{
  
   /* Change the link color to #111 (black) on hover */
 li a:hover{
-    background-color: #111;
+    background-color: white;
 }
 
 nav {    
     text-align: center;
+    background-color: antiquewhite;
+    opacity: 80%;
+    border-radius: 25px;
+    padding: 10px;
+    width: 450px;
+    height: 50px;
+    display: inline-block;
 }
 
+
+  
 ul.nav {
     display: inline-block;
-    float: none;
-    }
+    list-style-type: none;
+}
 
 img {
     padding-top: 200px;
@@ -76,21 +90,6 @@ img {
       display: inline;
     }
 }
-
-
-
-/* ol {
-    --mask: linear-gradient(to bottom,
-        rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%,
-        rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
-    ) 100% 50% / 100% 100% repeat-x;
-   
-    border: px #d8d8d8 dashed;
-    font: inherit;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-   
-}    */
 
 .bItem {
     display: flex;
