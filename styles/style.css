@@ -1,13 +1,13 @@
 body{
-    background-image: url("images/Cristiano_Ronaldo.jpg");
+    background-color: #000000;
     background-repeat: no-repeat, repeat;
     font-family:'Montserrat', sans-serif;
     font-weight:300;
     color: antiquewhite;
-    text-align: center;
-    
-}
-#text{
+    text-align: center;}
+
+ 
+#title{
     right: 300px;
     color: antiquewhite;
     font-size: 100px;
@@ -16,6 +16,18 @@ body{
     padding-top: 150px;
     padding-bottom: 150px;
 }
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -29,12 +41,12 @@ li {
 }
 li a{
     display: block;
-    color: white;
+    color: antiquewhite;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-  
+ 
   /* Change the link color to #111 (black) on hover */
 li a:hover{
     background-color: #111;
@@ -49,19 +61,58 @@ ul.nav {
     float: none;
     }
 
-div {
-    text-align: center;
+img {
+    padding-top: 200px;
+    max-width: 50%;
+    max-height: 50%;
 }
 
-section img {
-    font-weight: 300;
-    margin-bottom: 0.5rem;
+.container {
+    image {
+      width: 250px;
+      float: left;
+    }
+    &__text {
+      display: inline;
+    }
+}
+
+
+
+/* ol {
+    --mask: linear-gradient(to bottom,
+        rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%,
+        rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+    ) 100% 50% / 100% 100% repeat-x;
+   
+    border: px #d8d8d8 dashed;
+    font: inherit;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+   
+}    */
+
+.bItem {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/cr7.jpg);
+    z-index: -10;
+  }
+ 
+.bItem:after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-    z-index: -10;
-}
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 10%, black 100%);
+  }
