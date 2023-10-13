@@ -1,5 +1,5 @@
 body{
-    background-color: #000000;
+    background-color: #141414;
     background-repeat: no-repeat, repeat;
     font-family:'Montserrat', sans-serif;
     font-weight:300;
@@ -14,8 +14,9 @@ body{
     font-weight: bold;
     z-index: 9;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
+
 
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -24,11 +25,21 @@ h1{
     text-align: center;
     padding-top: 50px;
 
+
 }
 .sticky {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+}
+h2 {
+    padding: 0 5px
+    letter-spacing: 2px;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        #fce041 50%
+    );
 }
 
 
@@ -76,9 +87,11 @@ ul.nav {
 }
 
 img {
-    padding-top: 200px;
-    max-width: 50%;
-    max-height: 50%;
+    width: 750px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    margin-top: 150px;
+
 }
 
 .container {
@@ -113,5 +126,5 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent 10%, black 100%);
+    background: linear-gradient(to bottom, transparent 10%, #141414 100%);
   }
